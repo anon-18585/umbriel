@@ -1,0 +1,13 @@
+[[window_rule]]
+
+match.title = "Noctalia Settings$"
+default_pinned = true
+
+[[window_rule]]
+match.app_id = "^mpv$"
+default_floating = true
+
+[[window_rule]]
+match.title = "^zathura$"
+default_floating = true
+default_floating_size = { width = 0.5, height = 0.5 }

@@ -1,0 +1,44 @@
+[input]
+window_drag_toggle = "floating"
+
+[input.keyboard]
+layout = "fr,fr"           # empty uses the system default
+options = ""
+model = ""
+repeat_rate = 25
+repeat_delay = 250
+numlock_toggle = true
+track_layout = "global"
+
+[input.mouse]
+natural_scroll = false
+left_handed = false
+accel_profile = "flat"
+sensitivity = 0.0
+scroll_wheel_step = 60
+# scroll_button = "MouseBack"
+# scroll_button_lock = false
+
+# [input.touchpad]
+# tap = true
+# natural_scroll = true
+# left_handed = false
+# accel_profile = "flat"
+# sensitivity = 0.5
+# scroll_factor = 1.5
+# disable_while_typing = true
+# disable_on_external_mouse = true
+# click_method = "clickfinger"
+# tap_button_map = "left_middle_right"
+
+[input.cursor]
+theme = ""
+size = 24
+hardware_cursor = true
+follows_focus = false
+hide_when_typing = false
+hide_timeout_ms = 0
+
+[input.focus]
+follows_mouse = true
+follows_mouse_max_scroll = 0.5

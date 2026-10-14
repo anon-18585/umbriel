@@ -1,0 +1,34 @@
+# Complete reference: https://docs.noctalia.dev/umbriel/
+
+# https://docs.noctalia.dev/umbriel/configuration/#include
+[include]
+files = [
+    "subs/layout.toml",
+    "subs/keybinds.toml",
+    "subs/inputs.toml",
+    "subs/outputs.toml",
+    "subs/animations.toml",
+    "subs/effects.toml",
+    "subs/workspaces.toml",
+    "subs/appearance.toml",
+    "subs/scratchpads.toml",
+    "subs/window-rules.toml",
+    "subs/layer-rules.toml",
+]
+
+[include.optional]
+files = ["noctalia.toml"]
+
+# ==============================================================================
+# https://docs.noctalia.dev/umbriel/configuration/#general
+[general]
+autostart = ["noctalia"]
+mod_key = "Super"
+xwayland = true
+xwayland_native_resolution = false
+show_cheatsheet = true
+focus_on_activate = false
+honor_restored_maximize = false
+
+
+# ==============================================================================

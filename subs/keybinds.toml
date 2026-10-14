@@ -1,0 +1,120 @@
+# Syntax: https://docs.noctalia.dev/umbriel/keybinds/
+# Actions: https://docs.noctalia.dev/umbriel/actions/
+[keybinds]
+
+# Applications and session
+                # Browsers
+"Mod+B" = { action = "spawn:librewolf", repeat = false }
+                # File Manager(s)
+"Mod+X" = { action = "spawn:nautilus", repeat = false }
+"Mod+Alt+X" = { action = "spawn:yazi", repeat = false }
+                # Editor
+"Mod+E" = { action = "spawn:zeditor", repeat = false }
+                # Terminal
+"Mod+Return" = { action = "spawn:kitty", repeat = false }
+
+"Mod+V" = { action = "spawn:KeePassXC-2.7.12-x86_64.AppImage", repeat = false }
+
+
+# --- Noctalia ---
+                    # Applications Launcher
+"Alt+Space" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+S" = "spawn:noctalia msg panel-toggle control-center"
+"Mod+Alt+S" = "spawn:noctalia msg settings-toggle"
+"Mod+Alt+L" = "spawn:noctalia msg session lock"
+"Mod+Shift+Q" = "spawn:noctalia msg panel-toggle session"
+"Mod+Shift+Return" = "spawn:noctalia msg panel-toggle wallpaper"
+
+    # --- Media Controls ---
+    "XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up"
+    "XF86AudioLowerVolume" = "spawn:noctalia msg volume-down"
+
+    "XF86AudioMute" = "spawn:noctalia msg volume-mute"
+    "XF86AudioMicMute" = "spawn:noctalia msg mic-mute"
+
+    "XF86AudioPlay" = "spawn:noctalia msg media play"
+    "XF86AudioPause" = "spawn:noctalia msg media stop"
+
+    "XF86AudioNext" = "spawn:noctalia msg media next"
+    "XF86AudioPrev" = "spawn:noctalia msg media previous"
+
+    # --- Brightness Controls ---
+    "XF86MonBrightnessUp" = "spawn:noctalia msg brightness-up"
+    "XF86MonBrightnessDown" = "spawn:noctalia msg brightness-down"
+
+# session
+"Mod+Escape" = "session-quit"
+"Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+"Mod+Q" = { action = "window-close", repeat = false }
+
+# Focus and movement
+"Mod+Left" = "window-focus-left"
+"Mod+Down" = "window-focus-down"
+"Mod+Up" = "window-focus-up"
+"Mod+Right" = "window-focus-right"
+"Mod+H" = "window-focus-left"
+"Mod+J" = "window-focus-down"
+"Mod+K" = "window-focus-up"
+"Mod+L" = "window-focus-right"
+"Mod+F1" = "window-focus-next"
+"Mod+Shift+Left" = "column-move-left"
+"Mod+Shift+Down" = "window-move-down"
+"Mod+Shift+Up" = "window-move-up"
+"Mod+Shift+Right" = "column-move-right"
+"Mod+CTRL+WheelUp" = "workspace-previous"
+"Mod+CTRL+WheelDown" = "workspace-next"
+
+# Window state and layout
+"Mod+T" = { action = "window-toggle-floating", repeat = false }
+"Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
+"Mod+P" = { action = "window-toggle-pinned", repeat = false }
+
+"Mod+M" = { action = "window-toggle-maximize-to-edges", repeat = false }
+"Mod+F" = { action = "window-toggle-fullscreen", repeat = false }
+"Mod+Ctrl+F" = { action = "window-toggle-maximize", repeat = false }
+
+"Mod+R" = "window-cycle-primary-extent"
+"Mod+Shift+R" = "window-cycle-primary-extent-back"
+
+"Mod+Comma" = "window-consume-left"
+"Mod+Period" = "window-consume-right"
+
+"Mod+Ctrl+Comma" = "window-consume-from-left"
+"Mod+Ctrl+Period" = "window-consume-from-right"
+
+"Mod+W" = { action = "column-toggle-tabbed", repeat = false }
+
+"Mod+Alt+Right" = "column-focus-tab-next"
+"Mod+Alt+Left" = "column-focus-tab-previous"
+
+"Mod+WheelUp" = "window-focus-left"
+"Mod+WheelDown" = "window-focus-right"
+"Mod+O" = { action = "overview-toggle", repeat = false }
+
+# Workspaces
+"Mod+ampersand" = "workspace-switch:1"
+"Mod+eacute" = "workspace-switch:2"
+"Mod+quotedbl" = "workspace-switch:3"
+"Mod+apostrophe" = "workspace-switch:4"
+"Mod+parenleft" = "workspace-switch:5"
+"Mod+minus" = "workspace-switch:6"
+"Mod+egrave" = "workspace-switch:7"
+"Mod+underscore" = "workspace-switch:8"
+"Mod+ccedilla" = "workspace-switch:9"
+"Mod+agrave" = "workspace-switch:10"
+
+"Mod+Shift+ampersand" = "window-move-to-workspace:1"
+"Mod+Shift+eacute" = "window-move-to-workspace:2"
+"Mod+Shift+quotedbl" = "window-move-to-workspace:3"
+"Mod+Shift+apostrophe" = "window-move-to-workspace:4"
+"Mod+Shift+parenleft" = "window-move-to-workspace:5"
+"Mod+Shift+minus" = "window-move-to-workspace:6"
+"Mod+Shift+egrave" = "window-move-to-workspace:7"
+"Mod+Shift+underscore" = "window-move-to-workspace:8"
+"Mod+Shift+ccedilla" = "window-move-to-workspace:9"
+"Mod+Shift+agrave" = "window-move-to-workspace:10"
+# Scratchpad
+"Mod+Shift+Space" = { action = "window-move-to-scratchpad", repeat = false }
+"Mod+Space" = "scratchpad-toggle"
+"Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad", repeat = false }
+"Mod+Tab" = "scratchpad-focus-next"
