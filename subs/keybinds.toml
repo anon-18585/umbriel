@@ -6,8 +6,7 @@
                 # Browsers
 "Mod+B" = { action = "spawn:librewolf", repeat = false }
                 # File Manager(s)
-"Mod+X" = { action = "spawn:nautilus", repeat = false }
-"Mod+Alt+X" = { action = "spawn:yazi", repeat = false }
+"Mod+X" = { action = "spawn:strata", repeat = false }
                 # Editor
 "Mod+E" = { action = "spawn:zeditor", repeat = false }
                 # Terminal
