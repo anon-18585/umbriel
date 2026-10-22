@@ -2,6 +2,7 @@
 # Actions: https://docs.noctalia.dev/umbriel/actions/
 [keybinds]
 
+"Mod+escape" = "cheatsheet-toggle" 
 # Applications and session
                 # Browsers
 "Mod+B" = { action = "spawn:librewolf", repeat = false }
@@ -42,52 +43,69 @@
     "XF86MonBrightnessDown" = "spawn:noctalia msg brightness-down"
 
 # session
-"Mod+Escape" = "session-quit"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
 "Mod+Q" = { action = "window-close", repeat = false }
 
 # Focus and movement
+# Focus Arrows
 "Mod+Left" = "window-focus-left"
 "Mod+Down" = "window-focus-down"
 "Mod+Up" = "window-focus-up"
 "Mod+Right" = "window-focus-right"
+
+# Focus HJKL
 "Mod+H" = "window-focus-left"
 "Mod+J" = "window-focus-down"
 "Mod+K" = "window-focus-up"
 "Mod+L" = "window-focus-right"
-"Mod+F1" = "window-focus-next"
+
+# move column
 "Mod+Shift+Left" = "column-move-left"
+"Mod+Shift+Right" = "column-move-right"
+
+# move windows
 "Mod+Shift+Down" = "window-move-down"
 "Mod+Shift+Up" = "window-move-up"
-"Mod+Shift+Right" = "column-move-right"
-"Mod+CTRL+WheelUp" = "workspace-previous"
-"Mod+CTRL+WheelDown" = "workspace-next"
+
+# focus window Wheel scroll
+"Mod+CTRL+WheelUp" = "window-focus-left"
+"Mod+CTRL+WheelDown" = "window-focus-right"
 
 # Window state and layout
+# Floating state 
 "Mod+T" = { action = "window-toggle-floating", repeat = false }
 "Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
+
+# Pinned state 
 "Mod+P" = { action = "window-toggle-pinned", repeat = false }
 
+# Layout state
 "Mod+M" = { action = "window-toggle-maximize-to-edges", repeat = false }
 "Mod+F" = { action = "window-toggle-fullscreen", repeat = false }
 "Mod+Ctrl+F" = { action = "window-toggle-maximize", repeat = false }
 
+# Preset cycle window layout
 "Mod+R" = "window-cycle-primary-extent"
 "Mod+Shift+R" = "window-cycle-primary-extent-back"
 
+# 
 "Mod+Comma" = "window-consume-left"
-"Mod+Period" = "window-consume-right"
+"Mod+semicolon" = "window-consume-right"
 
 "Mod+Ctrl+Comma" = "window-consume-from-left"
-"Mod+Ctrl+Period" = "window-consume-from-right"
+"Mod+Ctrl+semicolon" = "window-consume-from-right"
 
 "Mod+W" = { action = "column-toggle-tabbed", repeat = false }
 
 "Mod+Alt+Right" = "column-focus-tab-next"
 "Mod+Alt+Left" = "column-focus-tab-previous"
+# Wheel scroll
+"Mod+Alt+WheelDown" = "column-focus-tab-next"
+"Mod+Alt+WheelUp" = "column-focus-tab-previous"
+# Wheel scroll
+"Mod+WheelUp" = "workspace-previous"
+"Mod+WheelDown" = "workspace-next"
 
-"Mod+WheelUp" = "window-focus-left"
-"Mod+WheelDown" = "window-focus-right"
 "Mod+O" = { action = "overview-toggle", repeat = false }
 
 # Workspaces
@@ -101,6 +119,10 @@
 "Mod+underscore" = "workspace-switch:8"
 "Mod+ccedilla" = "workspace-switch:9"
 "Mod+agrave" = "workspace-switch:10"
+
+"Mod+Shift+WheelDown" = "window-move-to-workspace-next"
+"Mod+Shift+WheelUp" = "window-move-to-workspace-previous"
+
 
 "Mod+Shift+ampersand" = "window-move-to-workspace:1"
 "Mod+Shift+eacute" = "window-move-to-workspace:2"
