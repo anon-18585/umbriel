@@ -15,6 +15,8 @@
 
 "Mod+V" = { action = "spawn:KeePassXC-2.7.12-x86_64.AppImage", repeat = false }
 
+		# ScreenShot tool
+"Mod+Shift+S" = { action = "spawn:flameshot gui --path /home/zirar/Documents/media/image/Screenshots/", repeat = false }
 
 # --- Noctalia ---
                     # Applications Launcher

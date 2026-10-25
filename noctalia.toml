@@ -1,25 +1,25 @@
 [colors]
-background = "#10141dFF"
-text_primary = "#dfe2efFF"
-text_muted = "#bfc6dcFF"
-accent_primary = "#54d6f3FF"
-accent_secondary = "#84d2e6FF"
-warning = "#adc6ffFF"
-error = "#ffb4abFF"
-insert_hint = "#adc6ff80"
-backdrop = "#323a4bFF"
+background = "#1a1b1bFF"
+text_primary = "#f3f2f2FF"
+text_muted = "#b6afafFF"
+accent_primary = "#e46767FF"
+accent_secondary = "#d86262FF"
+warning = "#ce6c6cFF"
+error = "#fd4663FF"
+insert_hint = "#ce6c6c80"
+backdrop = "#101011FF"
 
 [colors.border]
-focused = "#54d6f3FF"
-unfocused = "#323a4bFF"
+focused = "#e46767FF"
+unfocused = "#101011FF"
 outer = "#000000FF"
 
 [colors.overview]
 background_tint = "#00000088"
-badge = "#54d6f3FF"
+badge = "#e46767FF"
 workspace_background = "#000000FF"
 
 [[window_rule]]
 match.is_scratchpad = true
-border_color_focused = "#adc6ffFF"
-border_color_unfocused = "#2b4678FF"
+border_color_focused = "#ce6c6cFF"
+border_color_unfocused = "#6b1d1dFF"
