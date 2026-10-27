@@ -17,7 +17,7 @@ scale = 0.8
 
 [animation.windows_move]
 enabled = true
-curve = "spring:1,900"
+curve = "spring:1,1000"
 
 [animation.workspaces]
 style = "slide"
@@ -32,11 +32,8 @@ workspace_curve = "spring:1,1000"
 [animation.scratchpad]
 enabled = true
 curve = "spring:1,800"
-dim = 0.8
+dim = 0.50
 blur = false
-scale = 0.0
-maximize = false
-fullscreen = false
 
 [animation.border]
 enabled = true
@@ -50,4 +47,12 @@ dim = 0.0
 enabled = false
 
 [animation.windows_drag]
+# wobble physics at drag 
 physics = false
+stiffness = 20
+damping = 100 
+coupling = 100.0
+pointer_response = 2.0
+# placement 
+max_displacement_px = 200.0
+settle_after_pause_s = 0.25
