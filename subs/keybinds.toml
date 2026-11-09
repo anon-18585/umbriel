@@ -2,47 +2,47 @@
 # Actions: https://docs.noctalia.dev/umbriel/actions/
 [keybinds]
 
-"Mod+escape" = "cheatsheet-toggle" 
+"Mod+escape" = "cheatsheet-toggle"
 # Applications and session
                 # Browsers
-"Mod+B" = { action = "spawn:librewolf", repeat = false }
+"Mod+B" = { action = "spawn librewolf", repeat = false }
                 # File Manager(s)
-"Mod+X" = { action = "spawn:nautilus --new-window", repeat = false }
+"Mod+X" = { action = "spawn nautilus --new-window", repeat = false }
                 # Editor
-"Mod+E" = { action = "spawn:zeditor", repeat = false }
+"Mod+E" = { action = "spawn zeditor", repeat = false }
                 # Terminal
-"Mod+Return" = { action = "spawn:kitty", repeat = false }
+"Mod+Return" = { action = "spawn kitty", repeat = false }
 
-"Mod+V" = { action = "spawn:KeePassXC-2.7.12-x86_64.AppImage", repeat = false }
+"Mod+V" = { action = "spawn KeePassXC-2.7.12-x86_64.AppImage", repeat = false }
 
 		# ScreenShot tool
-"Mod+Shift+S" = { action = "spawn:flameshot gui --path /home/zirar/Documents/media/image/Screenshots/", repeat = false }
+"Mod+Shift+S" = { action = "spawn flameshot gui --path /home/zirar/Documents/media/image/Screenshots/", repeat = false }
 
 # --- Noctalia ---
                     # Applications Launcher
-"Alt+Space" = "spawn:noctalia msg panel-toggle launcher"
-"Mod+S" = "spawn:noctalia msg panel-toggle control-center"
-"Mod+Alt+S" = "spawn:noctalia msg settings-toggle"
-"Mod+Alt+L" = "spawn:noctalia msg session lock"
-"Mod+Shift+Q" = "spawn:noctalia msg panel-toggle session"
-"Mod+Shift+Return" = "spawn:noctalia msg panel-toggle wallpaper"
+"Alt+Space" = "spawn noctalia msg panel-toggle launcher"
+"Mod+S" = "spawn noctalia msg panel-toggle control-center"
+"Mod+Alt+S" = "spawn noctalia msg settings-toggle"
+"Mod+Alt+L" = "spawn noctalia msg session lock"
+"Mod+Shift+Q" = "spawn noctalia msg panel-toggle session"
+"Mod+Shift+Return" = "spawn noctalia msg panel-toggle wallpaper"
 
     # --- Media Controls ---
-    "XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up"
-    "XF86AudioLowerVolume" = "spawn:noctalia msg volume-down"
+    "XF86AudioRaiseVolume" = "spawn noctalia msg volume-up"
+    "XF86AudioLowerVolume" = "spawn noctalia msg volume-down"
 
-    "XF86AudioMute" = "spawn:noctalia msg volume-mute"
-    "XF86AudioMicMute" = "spawn:noctalia msg mic-mute"
+    "XF86AudioMute" = "spawn noctalia msg volume-mute"
+    "XF86AudioMicMute" = "spawn noctalia msg mic-mute"
 
-    "XF86AudioPlay" = "spawn:noctalia msg media play"
-    "XF86AudioPause" = "spawn:noctalia msg media stop"
+    "XF86AudioPlay" = "spawn noctalia msg media play"
+    "XF86AudioPause" = "spawn noctalia msg media stop"
 
-    "XF86AudioNext" = "spawn:noctalia msg media next"
-    "XF86AudioPrev" = "spawn:noctalia msg media previous"
+    "XF86AudioNext" = "spawn noctalia msg media next"
+    "XF86AudioPrev" = "spawn noctalia msg media previous"
 
     # --- Brightness Controls ---
-    "XF86MonBrightnessUp" = "spawn:noctalia msg brightness-up"
-    "XF86MonBrightnessDown" = "spawn:noctalia msg brightness-down"
+    "XF86MonBrightnessUp" = "spawn noctalia msg brightness-up"
+    "XF86MonBrightnessDown" = "spawn noctalia msg brightness-down"
 
 # session
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
@@ -74,11 +74,11 @@
 "Mod+CTRL+WheelDown" = "window-focus-right"
 
 # Window state and layout
-# Floating state 
+# Floating state
 "Mod+T" = { action = "window-toggle-floating", repeat = false }
 "Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
 
-# Pinned state 
+# Pinned state
 "Mod+P" = { action = "window-toggle-pinned", repeat = false }
 
 # Layout state
@@ -90,7 +90,7 @@
 "Mod+R" = "window-cycle-primary-extent"
 "Mod+Shift+R" = "window-cycle-primary-extent-back"
 
-# 
+#
 "Mod+Comma" = "window-consume-left"
 "Mod+semicolon" = "window-consume-right"
 
@@ -111,31 +111,31 @@
 "Mod+O" = { action = "overview-toggle", repeat = false }
 
 # Workspaces
-"Mod+ampersand" = "workspace-switch:1"
-"Mod+eacute" = "workspace-switch:2"
-"Mod+quotedbl" = "workspace-switch:3"
-"Mod+apostrophe" = "workspace-switch:4"
-"Mod+parenleft" = "workspace-switch:5"
-"Mod+minus" = "workspace-switch:6"
-"Mod+egrave" = "workspace-switch:7"
-"Mod+underscore" = "workspace-switch:8"
-"Mod+ccedilla" = "workspace-switch:9"
-"Mod+agrave" = "workspace-switch:10"
+"Mod+ampersand" = "workspace-switch 1"
+"Mod+eacute" = "workspace-switch 2"
+"Mod+quotedbl" = "workspace-switch 3"
+"Mod+apostrophe" = "workspace-switch 4"
+"Mod+parenleft" = "workspace-switch 5"
+"Mod+minus" = "workspace-switch 6"
+"Mod+egrave" = "workspace-switch 7"
+"Mod+underscore" = "workspace-switch 8"
+"Mod+ccedilla" = "workspace-switch 9"
+"Mod+agrave" = "workspace-switch 10"
 
 "Mod+Shift+WheelDown" = "window-move-to-workspace-next"
 "Mod+Shift+WheelUp" = "window-move-to-workspace-previous"
 
 
-"Mod+Shift+ampersand" = "window-move-to-workspace:1"
-"Mod+Shift+eacute" = "window-move-to-workspace:2"
-"Mod+Shift+quotedbl" = "window-move-to-workspace:3"
-"Mod+Shift+apostrophe" = "window-move-to-workspace:4"
-"Mod+Shift+parenleft" = "window-move-to-workspace:5"
-"Mod+Shift+minus" = "window-move-to-workspace:6"
-"Mod+Shift+egrave" = "window-move-to-workspace:7"
-"Mod+Shift+underscore" = "window-move-to-workspace:8"
-"Mod+Shift+ccedilla" = "window-move-to-workspace:9"
-"Mod+Shift+agrave" = "window-move-to-workspace:10"
+"Mod+Shift+ampersand" = "window-move-to-workspace 1"
+"Mod+Shift+eacute" = "window-move-to-workspace 2"
+"Mod+Shift+quotedbl" = "window-move-to-workspace 3"
+"Mod+Shift+apostrophe" = "window-move-to-workspace 4"
+"Mod+Shift+parenleft" = "window-move-to-workspace 5"
+"Mod+Shift+minus" = "window-move-to-workspace 6"
+"Mod+Shift+egrave" = "window-move-to-workspace 7"
+"Mod+Shift+underscore" = "window-move-to-workspace 8"
+"Mod+Shift+ccedilla" = "window-move-to-workspace 9"
+"Mod+Shift+agrave" = "window-move-to-workspace 10"
 # Scratchpad
 "Mod+Shift+Space" = { action = "window-move-to-scratchpad", repeat = false }
 "Mod+Space" = "scratchpad-toggle"
